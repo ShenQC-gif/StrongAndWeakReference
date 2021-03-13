@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView" customModule="Strong_Reference" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="161" height="255"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muQ-cY-PN7">
+                    <rect key="frame" x="0.0" y="0.0" width="161" height="127.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                    <state key="normal" title="▲">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapUp:" destination="-1" eventType="touchUpInside" id="7Om-s0-moo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIf-QC-nF7">
+                    <rect key="frame" x="0.0" y="127.5" width="161" height="127.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                    <state key="normal" title="▼">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapDown:" destination="-1" eventType="touchUpInside" id="wqO-ji-DWB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="muQ-cY-PN7" secondAttribute="trailing" id="AMP-iq-wgc"/>
+                <constraint firstAttribute="bottom" secondItem="nIf-QC-nF7" secondAttribute="bottom" id="EDD-vt-JrC"/>
+                <constraint firstItem="muQ-cY-PN7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KXQ-E4-h0k"/>
+                <constraint firstItem="muQ-cY-PN7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OAQ-Ue-UfP"/>
+                <constraint firstAttribute="trailing" secondItem="nIf-QC-nF7" secondAttribute="trailing" id="YMM-kR-Soh"/>
+                <constraint firstItem="nIf-QC-nF7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iyd-aa-dyl"/>
+                <constraint firstItem="nIf-QC-nF7" firstAttribute="top" secondItem="muQ-cY-PN7" secondAttribute="bottom" id="onv-V5-mjZ"/>
+                <constraint firstItem="muQ-cY-PN7" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="yJo-9P-MB6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-161.59420289855075" y="-23.102678571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
